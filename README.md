@@ -75,44 +75,44 @@ Follow these steps to get a copy of the project running locally on your machine.
 
 ## 🖼️ Screenshots
 
-1. Patient Dashboard (Desktop Grid View)
-This shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
+## Project Screenshots and Demonstrations
 
-<img src="/patient-dashboard/images/Screenshot 2025-10-15 170959.png" alt="Desktop view of the Patient Directory showing patient cards in a grid" width="800"/>
+1.  **Patient Dashboard (Desktop Grid View)**
+    Shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
+    
+    ![Desktop view of the Patient Directory showing patient cards in a grid](/patient-dashboard/images/Screenshot 2025-10-15 170959.png)
 
-2. Search Filter in Action
-Demonstrates the real-time filtering functionality on the patient list.
+2.  **Search Filter in Action**
+    Demonstrates the real-time filtering functionality on the patient list.
+    
+    ![Desktop view demonstrating the search bar filtering the patient list](/patient-dashboard/images/Screenshot 2025-10-15 171219.png)
 
-<img src="/patient-dashboard/images/Screenshot 2025-10-15 171219.png" alt="Desktop view demonstrating the search bar filtering the patient list" width="800"/>
+3.  **Add New Patient Form (Bonus Feature)**
+    Showcasing the implemented bonus feature with the form visible on the dashboard.
+    
+    ![Desktop view of the 'Add New Patient' form open on the dashboard](/patient-dashboard/images/Screenshot 2025-10-15 171016.png)
 
-3. Add New Patient Form (Bonus Feature)
-Showcasing the implemented bonus feature with the form visible on the dashboard.
+4.  **Landing Page (Desktop)**
+    The initial entry point of the application with the clear call-to-action.
+    
+    ![Desktop view of the Home Page and initial call-to-action](/patient-dashboard/images/Screenshot 2025-10-15 170948.png)
 
-<img src="/patient-dashboard/images/Screenshot 2025-10-15 171016.png" alt="Desktop view of the 'Add New Patient' form open on the dashboard" width="800"/>
+5.  **Mobile Layout: Patient Directory**
+    Demonstrates the clean mobile responsiveness of the patient cards, stacking correctly on small screens.
+    
+    ![Mobile view of the Patient Dashboard showing cards stacked for small screens](/patient-dashboard/images/WhatsApp Image 2025-10-15 at 17.12.36_3122a53d.jpg)
 
-4. Landing Page (Desktop)
-The initial entry point of the application with the clear call-to-action.
+6.  **Mobile Layout: Hamburger Menu Open**
+    This is the crucial image showing the functional, full-width menu overlay we implemented.
+    
+    ![Mobile view showing the hamburger menu open with vertically stacked navigation links](/patient-dashboard/images/WhatsApp Image 2025-10-15 at 17.12.36_6551353b.jpg)
 
-<img src="/patient-dashboard/images/Screenshot 2025-10-15 170948.png" alt="Desktop view of the Home Page and initial call-to-action" width="800"/>
+7.  **Mobile Layout: Initial Bug (Before Fix)**
+    This can be used to show the "before" state of the header responsiveness challenge.
+    
+    ![Mobile view showing the initial overlapping header link bug (Before Fix)](/patient-dashboard/images/WhatsApp Image 2025-10-15 at 17.19.26_53d42a6b.jpg)
 
-5. Mobile Layout: Patient Directory
-Demonstrates the clean mobile responsiveness of the patient cards, stacking correctly on small screens.
-
-<img src="/patient-dashboard/images/WhatsApp Image 2025-10-15 at 17.12.36_3122a53d.jpg" alt="Mobile view of the Patient Dashboard showing cards stacked for small screens" width="300"/>
-
-6. Mobile Layout: Hamburger Menu Open
-This is the crucial image showing the functional, full-width menu overlay we implemented.
-
-<img src="/patient-dashboard/images/WhatsApp Image 2025-10-15 at 17.12.36_6551353b.jpg" alt="Mobile view showing the hamburger menu open with vertically stacked navigation links" width="300"/>
-
-7. Mobile Layout: Initial Bug
-This can be used to show the "before" state of the header responsiveness challenge.
-
-<img src="/patient-dashboard/images/WhatsApp Image 2025-10-15 at 17.19.26_53d42a6b.jpg" alt="Mobile view showing the initial overlapping header link bug (Before Fix)" width="300"/>
-
-8. About Page
-The informational page of the application.
-
-<img src="/patient-dashboard/images/Screenshot 2025-10-15 171025.png" alt="Desktop view of the About Jarurat Care informational page" width="800"/>
-
------
+8.  **About Page**
+    The informational page of the application.
+    
+    ![Desktop view of the About Jarurat Care informational page](/patient-dashboard/images/Screenshot 2025-10-15 171025.png)
