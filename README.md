@@ -78,7 +78,7 @@ Follow these steps to get a copy of the project running locally on your machine.
 1.  **Patient Dashboard (Desktop Grid View)**
     Shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
 
-    ![Desktop view of the Patient Directory showing patient cards in a grid](Patient-Record-Dashboard/images/Screenshot%202025-10-15%20170959.png)
+    ![Desktop view of the Patient Directory showing patient cards in a grid](images/Screenshot 2025-10-15 170948.png)
 
 2.  **Search Filter in Action**
     Demonstrates the real-time filtering functionality on the patient list.
