@@ -75,42 +75,42 @@ Follow these steps to get a copy of the project running locally on your machine.
 
 ## 🖼️ Screenshots
 
-1.  **Patient Dashboard (Desktop Grid View)**
-    Shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
+Patient Dashboard (Desktop Grid View)
+Shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
 
-     <img width="1880" height="942" alt="Screenshot 2025-10-15 170948" src="https://github.com/user-attachments/assets/80dba9dd-a1be-4b2c-86b3-7d5244a75d93" />
+<img width="700" alt="Desktop view of the patient directory in a responsive card grid layout" src="https://github.com/user-attachments/assets/80dba9dd-a1be-4b2c-86b3-7d5244a75d93" />
 
-3.  **Search Filter in Action**
-    Demonstrates the real-time filtering functionality on the patient list.
+Search Filter in Action
+Demonstrates the real-time filtering functionality on the patient list.
 
-    <img width="1910" height="932" alt="Screenshot 2025-10-15 171219" src="https://github.com/user-attachments/assets/5e9fc363-fa16-4bca-bde9-963e69880287" />
+<img width="700" alt="Desktop view demonstrating the search bar filtering the patient list" src="https://github.com/user-attachments/assets/5e9fc363-fa16-4bca-bde9-963e69880287" />
 
-4.  **Add New Patient Form (Bonus Feature)**
-    Showcasing the implemented bonus feature with the form visible on the dashboard.
+Add New Patient Form (Bonus Feature)
+Showcasing the implemented bonus feature with the form visible on the dashboard.
 
-    <img width="1886" height="930" alt="Screenshot 2025-10-15 171016" src="https://github.com/user-attachments/assets/2739bbfd-4fd4-4915-bd0d-0288534a0359" />
-    
-6.  **Landing Page (Desktop)**
-    The initial entry point of the application with the clear call-to-action.
+<img width="700" alt="Desktop view of the 'Add New Patient' form open on the dashboard" src="https://github.com/user-attachments/assets/2739bbfd-4fd4-4915-bd0d-0288534a0359" />
 
-    <img width="1880" height="942" alt="Screenshot 2025-10-15 170948" src="https://github.com/user-attachments/assets/1fc8632a-03ee-4e39-84ac-fffc71166703" />
+Landing Page (Desktop)
+The initial entry point of the application with the clear call-to-action.
 
-7.  **Mobile Layout: Patient Directory**
-    Demonstrates the clean mobile responsiveness of the patient cards, stacking correctly on small screens.
+<img width="700" alt="Desktop view of the Home Page and initial call-to-action" src="https://github.com/user-attachments/assets/1fc8632a-03ee-4e39-84ac-fffc71166703" />
 
-    ![WhatsApp Image 2025-10-15 at 17 12 36_3122a53d](https://github.com/user-attachments/assets/7bb0bf31-6924-4144-b116-2f190b13ab29)
+Mobile Layout: Patient Directory
+Demonstrates the clean mobile responsiveness of the patient cards, stacking correctly on small screens.
 
-8.  **Mobile Layout: Hamburger Menu Open**
-    This is the crucial image showing the functional, full-width menu overlay we implemented.
+<img width="300" alt="Mobile view of the Patient Dashboard showing cards stacked for small screens" src="https://github.com/user-attachments/assets/7bb0bf31-6924-4144-b116-2f190b13ab29" />
 
-    ![WhatsApp Image 2025-10-15 at 17 12 36_6551353b](https://github.com/user-attachments/assets/22c4efbb-7fc8-4558-b384-2a1c5ebc8c3c)
+Mobile Layout: Hamburger Menu Open
+This is the crucial image showing the functional, full-width menu overlay we implemented.
 
-10.  **Mobile Layout: Initial Bug (Before Fix)**
-    This can be used to show the "before" state of the header responsiveness challenge.
+<img width="300" alt="Mobile view showing the hamburger menu open with vertically stacked navigation links" src="https://github.com/user-attachments/assets/22c4efbb-7fc8-4558-b384-2a1c5ebc8c3c" />
 
-    ![WhatsApp Image 2025-10-15 at 17 19 26_53d42a6b](https://github.com/user-attachments/assets/16c1aa6e-8751-45ef-a211-db6cb11adb74)
+Mobile Layout: Initial Bug (Before Fix)
+This can be used to show the "before" state of the header responsiveness challenge.
 
-11.  **About Page**
-    The informational page of the application.
+<img width="300" alt="Mobile view showing the initial overlapping header link bug (Before Fix)" src="https://github.com/user-attachments/assets/16c1aa6e-8751-45ef-a211-db6cb11adb74" />
 
-   <img width="1895" height="940" alt="Screenshot 2025-10-15 171025" src="https://github.com/user-attachments/assets/bc517961-39e0-4610-bdf7-155bc94cfaeb" />
+About Page
+The informational page of the application.
+
+<img width="700" alt="Desktop view of the About Jarurat Care informational page" src="https://github.com/user-attachments/assets/bc517961-39e0-4610-bdf7-155bc94cfaeb" />
