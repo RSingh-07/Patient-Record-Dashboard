@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# 🏥 Jarurat Care - Patient Records Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive front-end application built with **React** and **Tailwind CSS** to simulate a patient records management system. This project showcases proficiency in state management using **React Hooks** and utility-first styling for a clean, mobile-friendly user interface.
 
-## Available Scripts
+-----
 
-In the project directory, you can run:
+## 🚀 Live Deployment & Submission
 
-### `npm start`
+| Category | Status | Link/Notes |
+| :--- | :--- | :--- |
+| **Live Application** | Deployed on Vercel | [**View Jarurat Care Live**]()|
+| **Source Code** | GitHub Repository | [**View Repository on GitHub**]*https://github.com/RSingh-07/Patient-Record-Dashboard* |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-----
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features Implemented
 
-### `npm test`
+This dashboard was developed to meet the core requirements of the 'Patient Records Dashboard' task, focusing on modern React best practices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1\. Core Functionality (Patients Page)
 
-### `npm run build`
+  * **Data Handling:** Patient data is fetched from a **hardcoded mock JSON object** to simulate API integration.
+  * **Search Bar:** Implemented a real-time filter to allow users to **search patients by name**.
+  * **Patient List:** Displays patient records in a **responsive card layout** showing Name, Age, and Contact.
+  * **View Details:** Each patient card includes a 'View Details' button that triggers a **Modal** to display complete patient information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2\. Technical Implementation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * **React Hooks for State Management:** Utilizes `useState` and `useEffect` to manage patient data, search queries, and modal visibility.
+  * **Responsive UI/UX (Tailwind CSS):**
+      * The entire application is styled with **Tailwind CSS**.
+      * The Header implements a **fully functional hamburger menu** that hides the navigation links on mobile and reveals them in a vertical overlay.
+      * The main patient list adapts cleanly from a desktop grid to a single-column mobile view.
+  * **Bonus Feature:** Includes the ability to open an **'Add New Patient' form** (shown below).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-----
 
-### `npm run eject`
+## 🛠️ Setup and Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to get a copy of the project running locally on your machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * [Node.js](https://nodejs.org/) (which includes npm)
+  * Git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Local Installation Steps
 
-## Learn More
+1.  **Clone the Repository:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    git clone https://github.com/YourUsername/your-repo-name.git
+    cd your-repo-name
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2.  **Install Dependencies:**
 
-### Code Splitting
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3.  **Run the Development Server:**
 
-### Analyzing the Bundle Size
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    The application will open automatically at `http://localhost:3000`.
 
-### Making a Progressive Web App
+-----
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🖼️ Screenshots
 
-### Advanced Configuration
+1. Patient Dashboard (Desktop Grid View)
+This shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="images/Screenshot 2025-10-15 170959.png" alt="Desktop view of the Patient Directory showing patient cards in a grid" width="800"/>
 
-### Deployment
+2. Search Filter in Action
+Demonstrates the real-time filtering functionality on the patient list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img src="images/Screenshot 2025-10-15 171219.png" alt="Desktop view demonstrating the search bar filtering the patient list" width="800"/>
 
-### `npm run build` fails to minify
+3. Add New Patient Form (Bonus Feature)
+Showcasing the implemented bonus feature with the form visible on the dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="images/Screenshot 2025-10-15 171016.png" alt="Desktop view of the 'Add New Patient' form open on the dashboard" width="800"/>
+
+4. Landing Page (Desktop)
+The initial entry point of the application with the clear call-to-action.
+
+<img src="images/Screenshot 2025-10-15 170948.png" alt="Desktop view of the Home Page and initial call-to-action" width="800"/>
+
+5. Mobile Layout: Patient Directory
+Demonstrates the clean mobile responsiveness of the patient cards, stacking correctly on small screens.
+
+<img src="images/WhatsApp Image 2025-10-15 at 17.12.36_3122a53d.jpg" alt="Mobile view of the Patient Dashboard showing cards stacked for small screens" width="300"/>
+
+6. Mobile Layout: Hamburger Menu Open
+This is the crucial image showing the functional, full-width menu overlay we implemented.
+
+<img src="images/WhatsApp Image 2025-10-15 at 17.12.36_6551353b.jpg" alt="Mobile view showing the hamburger menu open with vertically stacked navigation links" width="300"/>
+
+7. Mobile Layout: Initial Bug
+This can be used to show the "before" state of the header responsiveness challenge.
+
+<img src="images/WhatsApp Image 2025-10-15 at 17.19.26_53d42a6b.jpg" alt="Mobile view showing the initial overlapping header link bug (Before Fix)" width="300"/>
+
+8. About Page
+The informational page of the application.
+
+<img src="images/Screenshot 2025-10-15 171025.png" alt="Desktop view of the About Jarurat Care informational page" width="800"/>
+
+-----

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// --- Icon Definitions (SVG paths are used from a standard library for clarity) ---
+
 
 const HomeSVG = (props) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -56,7 +56,7 @@ const PlusSVG = (props) => (
     </svg>
 );
 
-// 🔥 ADDED ICONS FOR HAMBURGER MENU 🔥
+
 const MenuSVG = (props) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -69,7 +69,7 @@ const XSVG = (props) => (
     </svg>
 );
 
-// --- The Export Object ---
+
 export const Icons = {
     Home: HomeSVG,
     Users: UsersSVG,
@@ -81,10 +81,10 @@ export const Icons = {
     Mail: MailSVG,
     Plus: PlusSVG,
     
-    // 🔥 Must include these for the Header component to work!
+   
     Menu: MenuSVG,
     X: XSVG,
 };
 
-// --- Destructured Export ---
+
 export const { Home, Users, Info, Search, Heart, Calendar, Phone, Mail, Plus, Menu, X } = Icons;
