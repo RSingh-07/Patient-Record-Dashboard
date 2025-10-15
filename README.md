@@ -17,7 +17,7 @@ A responsive front-end application built with **React** and **Tailwind CSS** to 
 
 This dashboard was developed to meet the core requirements of the 'Patient Records Dashboard' task, focusing on modern React best practices.
 
-### 1\. Core Functionality (Patients Page)
+ ### 1\. Core Functionality (Patients Page)
 
   * **Data Handling:** Patient data is fetched from a **hardcoded mock JSON object** to simulate API integration.
   * **Search Bar:** Implemented a real-time filter to allow users to **search patients by name**.
@@ -33,7 +33,7 @@ This project is built using modern React principles, focusing on performance, cl
 
 ---
 
-## Core State & Performance
+**Core State & Performance**
 
 The application is structured to minimize unnecessary component updates and maintain a clear flow of data.
 
@@ -44,7 +44,7 @@ The application is structured to minimize unnecessary component updates and main
 
 ---
 
-## Styling, Responsiveness, & Status
+**Styling, Responsiveness, & Status**
 
 The front-end design prioritizes speed and accessibility across all devices.
 
