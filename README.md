@@ -77,42 +77,44 @@ Follow these steps to get a copy of the project running locally on your machine.
 
 ## Project Screenshots and Demonstrations
 
+## Project Screenshots and Demonstrations
+
 1. **Patient Dashboard (Desktop Grid View)**
     Shows the main requirement: the desktop view of the patient directory in a responsive card grid layout.
-    
-    ![Desktop view of the Patient Directory showing patient cards in a grid](/patient-dashboard/images/Screenshot%202025-10-15%20170959.png)
+
+    ![Desktop view of the Patient Directory showing patient cards in a grid](Patient-Record-Dashboard/images/Screenshot%202025-10-15%20170959.png)
 
 2. **Search Filter in Action**
     Demonstrates the real-time filtering functionality on the patient list.
-    
-    ![Desktop view demonstrating the search bar filtering the patient list](/patient-dashboard/images/Screenshot%202025-10-15%20171219.png)
+
+    ![Desktop view demonstrating the search bar filtering the patient list](Patient-Record-Dashboard/images/Screenshot%202025-10-15%20171219.png)
 
 3. **Add New Patient Form (Bonus Feature)**
     Showcasing the implemented bonus feature with the form visible on the dashboard.
-    
-    ![Desktop view of the 'Add New Patient' form open on the dashboard](/patient-dashboard/images/Screenshot%202025-10-15%20171016.png)
+
+    ![Desktop view of the 'Add New Patient' form open on the dashboard](Patient-Record-Dashboard/images/Screenshot%202025-10-15%20171016.png)
 
 4. **Landing Page (Desktop)**
     The initial entry point of the application with the clear call-to-action.
-    
-    ![Desktop view of the Home Page and initial call-to-action](/patient-dashboard/images/Screenshot%202025-10-15%20170948.png)
+
+    ![Desktop view of the Home Page and initial call-to-action](Patient-Record-Dashboard/images/Screenshot%202025-10-15%20170948.png)
 
 5. **Mobile Layout: Patient Directory**
     Demonstrates the clean mobile responsiveness of the patient cards, stacking correctly on small screens.
-    
-    ![Mobile view of the Patient Dashboard showing cards stacked for small screens](/patient-dashboard/images/WhatsApp%20Image%202025-10-15%20at%2017.12.36_3122a53d.jpg)
+
+    ![Mobile view of the Patient Dashboard showing cards stacked for small screens](Patient-Record-Dashboard/images/WhatsApp%20Image%202025-10-15%20at%2017.12.36_3122a53d.jpg)
 
 6. **Mobile Layout: Hamburger Menu Open**
     This is the crucial image showing the functional, full-width menu overlay we implemented.
-    
-    ![Mobile view showing the hamburger menu open with vertically stacked navigation links](/patient-dashboard/images/WhatsApp%20Image%202025-10-15%20at%2017.12.36_6551353b.jpg)
+
+    ![Mobile view showing the hamburger menu open with vertically stacked navigation links](Patient-Record-Dashboard/images/WhatsApp%20Image%202025-10-15%20at%2017.12.36_6551353b.jpg)
 
 7. **Mobile Layout: Initial Bug (Before Fix)**
     This can be used to show the "before" state of the header responsiveness challenge.
-    
-    ![Mobile view showing the initial overlapping header link bug (Before Fix)](/patient-dashboard/images/WhatsApp%20Image%202025-10-15%20at%2017.19.26_53d42a6b.jpg)
+
+    ![Mobile view showing the initial overlapping header link bug (Before Fix)](Patient-Record-Dashboard/images/WhatsApp%20Image%202025-10-15%20at%2017.19.26_53d42a6b.jpg)
 
 8. **About Page**
     The informational page of the application.
-    
-    ![Desktop view of the About Jarurat Care informational page](/patient-dashboard/images/Screenshot%202025-10-15%20171025.png)
+
+    ![Desktop view of the About Jarurat Care informational page](Patient-Record-Dashboard/images/Screenshot%202025-10-15%20171025.png)
