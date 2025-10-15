@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App'; // Import your main App component
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+// Assuming you have a CSS file to import, usually where Tailwind gets compiled:
+// import './index.css'; 
+
+// Use the modern React 18+ way to create a root and render the application.
+// It looks for a div element with the id 'root' in your public/index.html file.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // The StrictMode component helps highlight potential problems in an application.
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

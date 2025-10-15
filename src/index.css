@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* This file is responsible for injecting the Tailwind CSS layers
+    that the build process (PostCSS/Tailwind Config) uses to generate
+    the final utility classes used throughout the application.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: You can add custom fonts or global resets here.
+    Using 'Inter' is a good modern choice.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Apply Inter font globally and ensure box-sizing is correct */
+html {
+    font-family: 'Inter', sans-serif;
+    /* Optional: Ensure scrolling is smooth if navigating to anchors */
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* A simple, optional utility to hide focus rings on non-keyboard interaction */
+.no-focus-outline:focus {
+    outline: none;
+    box-shadow: none;
 }
+
