@@ -8,8 +8,8 @@ A responsive front-end application built with **React** and **Tailwind CSS** to 
 
 | Category | Status | Link/Notes |
 | :--- | :--- | :--- |
-| **Live Application** | Deployed on Vercel | [**View Jarurat Care Live**]()|
-| **Source Code** | GitHub Repository | [**View Repository on GitHub**]*https://github.com/RSingh-07/Patient-Record-Dashboard* |
+| **Live Application** | Deployed on Vercel | [**View Jarurat Care Live**] (https://patient-record-dashboard-seven.vercel.app)|
+| **Source Code** | GitHub Repository | [**View Repository on GitHub**] *https://github.com/RSingh-07/Patient-Record-Dashboard* |
 
 -----
 
@@ -23,15 +23,26 @@ This dashboard was developed to meet the core requirements of the 'Patient Recor
   * **Search Bar:** Implemented a real-time filter to allow users to **search patients by name**.
   * **Patient List:** Displays patient records in a **responsive card layout** showing Name, Age, and Contact.
   * **View Details:** Each patient card includes a 'View Details' button that triggers a **Modal** to display complete patient information.
+  * **Delete Patient** (Bonus): Each patient card features a dedicated 'Delete' button with a confirmation prompt to remove the record from the local state.
 
-### 2\. Technical Implementation
+Understood. Since you already had the initial features, here is the updated, concise Technical Implementation section, incorporating the Delete functionality and the advanced Hooks (useCallback) we added to your App.jsx.
 
-  * **React Hooks for State Management:** Utilizes `useState` and `useEffect` to manage patient data, search queries, and modal visibility.
-  * **Responsive UI/UX (Tailwind CSS):**
-      * The entire application is styled with **Tailwind CSS**.
-      * The Header implements a **fully functional hamburger menu** that hides the navigation links on mobile and reveals them in a vertical overlay.
-      * The main patient list adapts cleanly from a desktop grid to a single-column mobile view.
-  * **Bonus Feature:** Includes the ability to open an **'Add New Patient' form** (shown below).
+### 2. Technical Implementation 🛠️
+**State & Architecture**
+Core State Management: Uses React Hooks (useState, useEffect) for managing all data, navigation, and UI state (search, modal visibility).
+
+Performance: Employs the useCallback hook in the main container (App.jsx) to memoize all critical handler functions (handleAddPatient, handleDeletePatient), preventing unnecessary re-renders of the component tree.
+
+Architecture: Follows the Container/Presentational Pattern. The top-level component (App.jsx) is the Controller, managing state and logic, which are passed via props to pure functional components (Views/Cards).
+
+Data Operations: Implements full C.R.U.D. capabilities on the client-side state, featuring forms for Add New Patient (Create) and buttons for Delete Patient (Delete).
+
+**Styling & Status**
+Styling: Utilizes Tailwind CSS for a utility-first approach, ensuring rapid development and a professional, maintainable design system.
+
+Responsiveness: The UI is fully adaptive, featuring a functional Hamburger Menu for mobile navigation and a patient grid that scales cleanly to a single-column view on small screens.
+
+Data Status: Implements robust conditional rendering to display explicit Loading and Error states during the simulated API fetch, adhering to the bonus requirement.
 
 -----
 
