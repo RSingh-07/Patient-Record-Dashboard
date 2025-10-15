@@ -27,7 +27,7 @@ This dashboard was developed to meet the core requirements of the 'Patient Recor
 
 Understood. Since you already had the initial features, here is the updated, concise Technical Implementation section, incorporating the Delete functionality and the advanced Hooks (useCallback) we added to your App.jsx.
 
-# 🛠️ 2. Technical Implementation & Architecture
+### 🛠️ 2. Technical Implementation & Architecture
 
 This project is built using modern React principles, focusing on performance, clear separation of concerns, and a highly responsive user experience.
 
