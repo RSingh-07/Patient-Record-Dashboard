@@ -1,14 +1,32 @@
 import React from 'react';
-import { Heart, Home, Users, Info } from '../icons/Icons';
-import NavLink from './NavLink';
+// Path to icons is up two levels (out of layouts and out of components)
+import { Heart, Home, Users, Info } from '../icons/Icons'; 
+// Path to NavLink is up one level (out of layouts)
+import NavLink from './NavLink'; 
+
+// Path to logo is up three levels (out of layouts, components, and src)
+import JaruratLogo from '../../../src/assets/jarurat-care-logo.webp';
 
 const Header = ({ page, navigate }) => (
     <header className="bg-gray-800 shadow-xl sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-            <div className="text-2xl font-bold text-[#4F46E5] flex items-center">
-                <Heart className="w-6 h-6 mr-2 fill-[#4F46E5] stroke-none" />
+            
+            {/* Logo and Heading Section */}
+            {/* TEXT CHANGE: Changed text-white to text-blue-400 */}
+            <div className="text-3xl font-extrabold text-blue-400 flex items-center">
+                {/* Image Logo */}
+                <img
+                    src={JaruratLogo}
+                    alt="Jarurat Care Logo"
+                    // Tailwind classes for size and spacing (h-10 matches header height)
+                    className="h-10 w-auto mr-3" 
+                />
+                
+                {/* Text Heading - Now bright blue, extra bold, and larger (text-3xl) */}
                 Jarurat Care
             </div>
+
+            {/* Navigation Links */}
             <nav className="flex space-x-4">
                 <NavLink label="Home" currentPage={page} targetPage="home" onClick={() => navigate('home')} icon={Home} />
                 <NavLink label="Patients" currentPage={page} targetPage="patients" onClick={() => navigate('patients')} icon={Users} />
