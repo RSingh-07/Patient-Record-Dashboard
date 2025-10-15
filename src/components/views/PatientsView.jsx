@@ -3,11 +3,10 @@ import { Search, Plus } from '../icons/Icons';
 import PatientCard from '../patients/PatientCard';
 import AddPatientForm from '../patients/AddPatientForm';
 
-const PatientsView = ({ patients, isLoading, error, onAddPatient, onViewDetails }) => {
+const PatientsView = ({ patients, isLoading, error, onAddPatient, onViewDetails, onDeletePatient }) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [showAddForm, setShowAddForm] = useState(false);
 
-    // Filter patients based on search query
     const filteredPatients = useMemo(() => {
         if (!patients) return [];
         const lowerCaseQuery = searchQuery.toLowerCase();
@@ -37,9 +36,7 @@ const PatientsView = ({ patients, isLoading, error, onAddPatient, onViewDetails 
                 Patient Directory ({patients.length})
             </h2>
 
-            {/* Search and Add Button */}
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-                {/* Search Input */}
                 <div className="relative w-full sm:w-1/2">
                     <input
                         type="text"
@@ -51,7 +48,6 @@ const PatientsView = ({ patients, isLoading, error, onAddPatient, onViewDetails 
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                 </div>
 
-                {/* Add Patient Button */}
                 <button
                     onClick={() => setShowAddForm(!showAddForm)}
                     className="w-full sm:w-auto px-6 py-2 bg-[#4F46E5] text-white rounded-lg hover:bg-[#4338CA] transition-colors font-semibold shadow-lg flex items-center justify-center space-x-2"
@@ -61,7 +57,6 @@ const PatientsView = ({ patients, isLoading, error, onAddPatient, onViewDetails 
                 </button>
             </div>
 
-            {/* Add Patient Form */}
             {showAddForm && (
                 <div className="w-full max-w-2xl mx-auto py-4">
                     <AddPatientForm 
@@ -75,11 +70,15 @@ const PatientsView = ({ patients, isLoading, error, onAddPatient, onViewDetails 
                 </div>
             )}
 
-            {/* Patient Grid */}
             {filteredPatients.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {filteredPatients.map(patient => (
-                        <PatientCard key={patient.id} patient={patient} onViewDetails={onViewDetails} />
+                        <PatientCard 
+                            key={patient.id} 
+                            patient={patient} 
+                            onViewDetails={onViewDetails} 
+                            onDelete={onDeletePatient}
+                        />
                     ))}
                 </div>
             ) : (

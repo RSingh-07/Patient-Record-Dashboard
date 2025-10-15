@@ -9,7 +9,6 @@ import './index.css';
 import { Plus, Search, Heart, Info, Calendar, Phone, Mail } from './components/icons/Icons';
 
 
-
 const App = () => {
     const [patients, setPatients] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +16,6 @@ const App = () => {
     const [selectedPatient, setSelectedPatient] = useState(null);
     const [page, setPage] = useState('home');
 
-    // Fetch mock patients
     useEffect(() => {
         setIsLoading(true);
         fetchMockPatients().then(result => {
@@ -28,15 +26,31 @@ const App = () => {
     }, []);
 
     const handleAddPatient = useCallback(
-        (newPatient) => setPatients(prev => [newPatient, ...prev]), []
+        (newPatient) => {
+            const newId = Math.max(...patients.map(p => p.id), 0) + 1;
+            setPatients(prev => [{ ...newPatient, id: newId }, ...prev]);
+        }, [patients]
     );
+
+    const handleDeletePatient = useCallback(
+        (patientId) => {
+            const isConfirmed = window.confirm("Are you sure you want to delete this patient record? This cannot be undone.");
+
+            if (isConfirmed) {
+                setPatients(prevPatients => prevPatients.filter(patient => patient.id !== patientId));
+                if (selectedPatient && selectedPatient.id === patientId) {
+                    setSelectedPatient(null);
+                }
+            }
+        }, [selectedPatient]
+    );
+
     const handleViewDetails = useCallback(
         (patient) => setSelectedPatient(patient), []
     );
     const handleCloseModal = useCallback(() => setSelectedPatient(null), []);
     const navigate = (newPage) => setPage(newPage);
 
-    // Conditional rendering of views
     let CurrentView;
     if (page === 'patients') {
         CurrentView = (
@@ -46,6 +60,7 @@ const App = () => {
                 error={error}
                 onAddPatient={handleAddPatient}
                 onViewDetails={handleViewDetails}
+                onDeletePatient={handleDeletePatient} 
             />
         );
     } else if (page === 'about') {
@@ -56,15 +71,12 @@ const App = () => {
 
     return (
         <div className="min-h-screen bg-[#1F2937]">
-            {/* Header / Navigation */}
             <Header page={page} navigate={navigate} />
 
-            {/* Main content */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {CurrentView}
             </main>
 
-            {/* Patient Details Modal */}
             <PatientDetailModal patient={selectedPatient} onClose={handleCloseModal} />
         </div>
     );
