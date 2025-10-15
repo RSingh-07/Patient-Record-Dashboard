@@ -1,23 +1,22 @@
-import React, { useState } from 'react';
-// Corrected path based on your input: UP TWO LEVELS to reach components/ then icons/Icons
-// NOTE: This path is highly unusual for the structure you described, but used as requested.
+import React, { useState } from 'react'; 
+// Using the paths you specified
 import { Heart, Home, Users, Info, Menu, X } from '../icons/Icons'; 
-// NavLink path (up one level from layouts)
 import NavLink from '../NavLink'; 
 
-// Logo path (Using your specified path, though '../../../assets/...' is standard)
+// Using the path you specified
 import JaruratLogo from '../../../src/assets/jarurat-care-logo.webp';
 
 const Header = ({ page, navigate }) => {
-    // State is required for the hamburger menu
+    // 1. STATE must be inside the component body {}
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    // Function to handle navigation and close the menu
+    // 2. Function must be inside the component body {}
     const handleNavigate = (targetPage) => {
         navigate(targetPage);
         setIsMenuOpen(false);
     };
 
+    // 3. RETURN must be inside the component body {}
     return (
         <header className="bg-gray-800 shadow-xl sticky top-0 z-40">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
