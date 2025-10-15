@@ -1,7 +1,7 @@
 import React, { useState } from 'react'; 
 // Using the paths you specified
 import { Heart, Home, Users, Info, Menu, X } from '../icons/Icons'; 
-import NavLink from '../NavLink'; 
+import NavLink from '../layouts/NavLink'; 
 
 // Using the path you specified
 import JaruratLogo from '../../../src/assets/jarurat-care-logo.webp';
